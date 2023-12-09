@@ -8,17 +8,12 @@ Make a splitwise kind of app with these features
 4. Show current balance on each user basis the spends done.
 5. Option to settle money among users basis the spends done.
 
-### Running test cases
+### Running test cases / Running locally
 
-1. Install ruby 3.0 or above (using rvm/rbenv/similar tools)
-2. Install gems (`bundle install`)
-3. Run test cases `rspec`
+#### Use IntelliJ
+1. Import
+2. Run `testSettlement` method of `ExpenseServiceTest`.
 
-Didn't aim to cover 100% code in specs, but 94% coverage exists by testing main service logic.
-
-
-### Running locally
-1. Install ruby and gems
-2. Open ruby console `bundle exec irb`
-3. `require 'splitwise'`
-4. Run whatever logic you want to test
+#### Using mvn
+1. `cd` to project.
+2. Run `mvn test`
