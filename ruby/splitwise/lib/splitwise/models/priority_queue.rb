@@ -9,11 +9,15 @@ module Splitwise
       end
 
       def shift
-        @array.shift
+        item = @array.shift
+        @array.sort!
+
+        item
       end
 
       def << (item)
         @array << item
+        @array.sort!
       end
     end
   end
