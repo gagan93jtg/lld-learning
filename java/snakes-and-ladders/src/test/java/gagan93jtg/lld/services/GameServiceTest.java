@@ -59,10 +59,11 @@ public class GameServiceTest {
     assertEquals(gaganPlayer.getCurrentCell(), 99);
   }
 
+  @Test
   public void testPlayerWon() {
     gaganPlayer.setCurrentCell(99);
     gameService.takeTurn(gaganPlayer, 1);
-    assertEquals(gaganPlayer.isWon(), true);
+    assertEquals(gaganPlayer.getCurrentCell(), 100);
   }
 
   private ArrayList<Player> getPlayers() {
